@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="aframe-scripts/aframe.min.js"></script>
+  <title>Computer Graphics</title>
+</head>
+<body>
+  <a-scene>
+   
+    <a-sky src="textures/clear-sunny-sky.jpg" ></a-sky>
+    <a-plane src="textures/TexturesCom_FloorsCheckerboard0034_1_M.jpg" width="10" height="10" rotation="-90 0 0" position="0 0 -6"></a-plane>
+
+    <!-- Table -->
+    <a-cylinder radius="2" height=".1" src="assets/surface/SurfaceImperfections008_4K_var2.jpg" position="0 1.4 -5" material="opacity: 0.6">
+      <!-- Cup 1 -->
+      <a-cylinder open-ended="true" src="assets/ceramic_50-4K/ceramic_50_height-4K.png" radius=".1" height=".2" position="0 0.15 0">
+        <a-torus rotation="0 0 90" radius="0.04" radius-tubular="0.010" src="assets/ceramic_50-4K/ceramic_50_height-4K.png" position="-0.10 -0.01 0"></a-torus>
+      </a-cylinder>
+      <!-- Cup 2 -->
+      <a-cylinder src="assets/ceramic_50-4K/ceramic_50_basepattern-4K.png" radius=".1" height=".2"  position="0.3 0.15 0">
+        <a-torus radius="0.04" radius-tubular="0.01" src="assets/ceramic_50-4K/ceramic_50_basepattern-4K.png" rotation="0 0 90" position="0.10 -0.01 0"></a-torus>
+      </a-cylinder>
+      <a-cylinder radius=".1" height=".2" src="assets/milo-logo-3397B884A7-seeklogo.com.png" position="0 0.15 0.3">
+      </a-cylinder>
+      <a-cylinder radius=".1" height=".2" src="assets/index.jpg" position="0.3 0.15 0.9"></a-cylinder>
+      <a-cylinder radius=".1" height=".2" src="assets/index.jpg" position="-0.4 0.15 1"></a-cylinder>
+
+
+      <a-entity position="0 -0.6 0">
+        <a-cone height="1.2" src="assets/surface/SurfaceImperfections008_4K_var2.jpg" radius="0.2"  rotation="0 0 180"></a-cone>
+        <a-cone height="1.2" src="assets/surface/SurfaceImperfections008_4K_var2.jpg" radius="0.2" rotation="0 0 0"></a-cone>
+      </a-entity>
+    </a-cylinder>
+
+    <!-- Chair -->
+    <a-entity position="0 0 -3">
+      <a-box width="1" height=".2" depth="1" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 1 0" rotation="0 0 0">
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 0.4 .5" rotation="0 0 0"></a-box>
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.3 0.4 .5" rotation="0 0 0"></a-box>
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.3 0.4 .5" rotation="0 0 0"></a-box>
+      </a-box>
+      <a-box width="1" height="0.3" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 2 0.5"></a-box>
+      <!-- Legs -->
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.45 0.5 0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.45 0.5 0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.45 0.5 -0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.45 0.5 -0.45" rotation="0 0 0"></a-box>
+
+    </a-entity>
+
+    <!-- Chair -->
+    <a-entity position="0 0 -7" rotation="0 180 0 ">
+      <a-box width="1" height=".2" depth="1" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 1 0" rotation="0 0 0">
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 0.4 .5" rotation="0 0 0"></a-box>
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.3 0.4 .5" rotation="0 0 0"></a-box>
+        <a-box width="0.1" height="1.0" depth="0.01" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.3 0.4 .5" rotation="0 0 0"></a-box>
+      </a-box>
+      <a-box width="1" height="0.3" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0 2 0.5"></a-box>
+      <!-- Legs -->
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.45 0.5 0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.45 0.5 0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="0.45 0.5 -0.45" rotation="0 0 0"></a-box>
+      <a-box width="0.08" height="1.0" depth="0.05" src="assets/anzem-4K/4K-anzem_basecolor.png" position="-0.45 0.5 -0.45" rotation="0 0 0"></a-box>
+
+    </a-entity>
+
+
+
+
+  </a-scene>
+</body>
+</html>
